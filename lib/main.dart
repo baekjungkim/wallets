@@ -51,7 +51,7 @@ class App extends StatelessWidget {
                   ],
                 ),
                 const SizedBox(
-                  height: 120,
+                  height: 80,
                 ),
                 Text(
                   'Total Balance',
@@ -120,30 +120,20 @@ class App extends StatelessWidget {
                   amount: '6 428',
                   icon: Icons.euro_rounded,
                 ),
-                Transform.translate(
-                  offset: const Offset(
-                    0,
-                    -25,
-                  ),
-                  child: const WalletCard(
-                    currencyName: 'Bitcoint',
-                    currencyCode: 'BTC',
-                    amount: '9 578',
-                    icon: Icons.currency_bitcoin_rounded,
-                    isInverted: true,
-                  ),
+                const WalletCard(
+                  currencyName: 'Bitcoint',
+                  currencyCode: 'BTC',
+                  amount: '9 578',
+                  icon: Icons.currency_bitcoin_rounded,
+                  isInverted: true,
+                  order: 1,
                 ),
-                Transform.translate(
-                  offset: const Offset(
-                    0,
-                    -50,
-                  ),
-                  child: const WalletCard(
-                    currencyName: 'Dollar',
-                    currencyCode: 'USD',
-                    amount: '4 231',
-                    icon: Icons.attach_money_rounded,
-                  ),
+                const WalletCard(
+                  currencyName: 'Dollar',
+                  currencyCode: 'USD',
+                  amount: '4 231',
+                  icon: Icons.attach_money_rounded,
+                  order: 2,
                 ),
               ],
             ),
