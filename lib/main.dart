@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:toonflix/widgets/button.dart';
 
 void main() {
-  runApp(App());
+  runApp(const App());
 }
 
 class App extends StatelessWidget {
@@ -73,43 +74,16 @@ class App extends StatelessWidget {
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Container(
-                    decoration: BoxDecoration(
-                      color: const Color(0xfff2b33a),
-                      borderRadius: BorderRadius.circular(45),
-                    ),
-                    child: const Padding(
-                      padding: EdgeInsets.symmetric(
-                        vertical: 20,
-                        horizontal: 45,
-                      ),
-                      child: Text(
-                        'Transfer',
-                        style: TextStyle(
-                          fontSize: 22,
-                        ),
-                      ),
-                    ),
+                children: const [
+                  Button(
+                    text: 'Transfer',
+                    buttonColor: Color(0xfff2b33a),
+                    textColor: Colors.black,
                   ),
-                  Container(
-                    decoration: BoxDecoration(
-                      color: Colors.teal.shade900,
-                      borderRadius: BorderRadius.circular(45),
-                    ),
-                    child: const Padding(
-                      padding: EdgeInsets.symmetric(
-                        vertical: 20,
-                        horizontal: 45,
-                      ),
-                      child: Text(
-                        'Request',
-                        style: TextStyle(
-                          color: Colors.white70,
-                          fontSize: 22,
-                        ),
-                      ),
-                    ),
+                  Button(
+                    text: 'Request',
+                    buttonColor: Color(0xff1f2123),
+                    textColor: Colors.white,
                   ),
                 ],
               ),
