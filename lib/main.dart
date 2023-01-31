@@ -125,7 +125,6 @@ class App extends StatelessWidget {
                   currencyCode: 'BTC',
                   amount: '9 578',
                   icon: Icons.currency_bitcoin_rounded,
-                  isInverted: true,
                   order: 1,
                 ),
                 const WalletCard(
